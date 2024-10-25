@@ -1,15 +1,15 @@
-function openModal() {
-    var modal = document.getElementById('recipeModal');
+function openModal(modalId) {
+    var modal = document.getElementById(modalId);
     modal.style.display = 'block';
     setTimeout(function() {
         modal.style.display = 'none';
     }, 5000);
 }
 
+function openPorkModal() {
+    openModal('porkModal');
+}
+
 function openHamburgerModal() {
-    var modal = document.getElementById('hamburgerModal');
-    modal.style.display = 'block';
-    setTimeout(function() {
-        modal.style.display = 'none';
-    }, 5000);
+    openModal('hamburgerModal');
 }
