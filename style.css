@@ -1,6 +1,22 @@
 body {
+    animation: backgroundTransition 10s infinite;
     background-color: pale cyan;
     color: red;
+}
+
+@keyframes backgroundTransition {
+    0% {
+        background-color: right;
+    }
+    33% {
+        background-color: yellow;
+    }
+    67% {
+        background-color: blue;
+    }
+    100% {
+        background-color: black;
+    }
 }
 
 h1 {
